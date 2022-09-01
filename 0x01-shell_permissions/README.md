@@ -1,0 +1,1 @@
+Shell permissions README directoey

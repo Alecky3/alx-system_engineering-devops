@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Displays:
 # The content of the current directory
 # In list format.

@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Displays numbers from 1 to 100.
 # Requirements:
 # Displays "FizzBuzz" when the number is a multiple of 3 and 5.

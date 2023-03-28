@@ -7,7 +7,7 @@ mkdir -p /var/www/test/html
 touch /var/www/test/html/index.html
 echo "Hello World!" > /var/www/test/html/index.html
 touch /var/www/test/html/404.html
-echo "Ceci n'est pas une page" > /var/www/test/html/index.html
+echo "Ceci n'est pas une page" > /var/www/test/html/404.html
 printf %s "server {
      listen      80;
      listen      [::]:80;
@@ -22,6 +22,7 @@ printf %s "server {
     location /404 {
       root /var/www/test/html;
       internal;
+}
 }
 " > /etc/nginx/sites-available/default
 

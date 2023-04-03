@@ -6,7 +6,7 @@ apt-get install haproxy=2.6.\*
 
 mkdir -p /etc/haproxy/
 printf %s "frontend alex-frontend
-		bind 127.0.0.1:80
+		bind :80
 		default_backend alex-backends
 
 	   backend alex-backends

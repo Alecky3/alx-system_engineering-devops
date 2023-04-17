@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Fixes my container so that Nginx is running as the nginx user and listening
+# on all active IPs on port 8080.
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+sudo -u nginx service nginx start

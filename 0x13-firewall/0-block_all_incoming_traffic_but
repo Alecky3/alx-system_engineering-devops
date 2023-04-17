@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+sudo apt install ufw
+sudo ufw default allow outgoing
+sudo ufw default allow incoming
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw enable

@@ -2,9 +2,9 @@
 """Given an employee ID, this script returns info about his/her
    TODO list progress.
 """
+import csv
 import requests
 import sys
-import csv
 
 
 if __name__ == "__main__":

@@ -9,12 +9,12 @@ def number_of_subscribers(subreddit):
     """
     Returns the number of subscribers for a given subreddit.
     """
-    api_headers = {
+    headers = {
         'User-Agent': 'Windows:alx_scripts_python:v1.0.0 (/u/Alecky3)'
     }
     res = requests.get(
         'https://www.reddit.com/r/{}/about/.json'.format(subreddit),
-        headers=api_headers,
+        headers=headers,
         allow_redirects=False
     )
     if res.status_code == 200:

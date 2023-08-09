@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import requests
+
+
 """
 Defines number_of_subscribers function that returns the number of subscribes
 for a subreddit
@@ -18,7 +20,10 @@ def number_of_subscribers(subreddit):
             }
         req = requests.get(url, headers=headers, allow_redirects=False)
         if req.status_code == 200:
-            return req.json().get("data").get("subscribers")
+            try:
+                return req.json().get("data").get("subscribers")
+            except Exception:
+                return 0
         else:
             return 0
     else:

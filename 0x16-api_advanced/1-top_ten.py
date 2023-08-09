@@ -14,7 +14,8 @@ def top_ten(subreddit):
         'User-Agent': 'Windows:alx_scripts_python:v1.0.0 (/u/Alecky3)'
     }
     res = requests.get(
-        'https://www.reddit.com/r/{}/.json?sort=topt&limit=10'.format(subreddit),
+        'https://www.reddit.com/r/{}/.json?sort=topt&limit=10'.format(
+            subreddit),
         headers=headers,
         allow_redirects=False
     )

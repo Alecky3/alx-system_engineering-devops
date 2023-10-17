@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# uses ssh  to connect to my server using the certficate ~/.ssh/school, user ubuntu.
-ssh -i ~/.ssh/school ubuntu@18.209.223.27

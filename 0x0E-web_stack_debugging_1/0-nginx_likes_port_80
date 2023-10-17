@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# Debugs nginx to find what's keeiping it from listening on port 80
-systemctl restart nginx
